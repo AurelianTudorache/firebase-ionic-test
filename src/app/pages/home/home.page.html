@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="floating">Input1</ion-label>
+        <ion-input type="text" [formControl]="input1" formControlName="input1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Input2</ion-label>
+        <ion-input type="text" [formControl]="input2" formControlName="input2"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Input3</ion-label>
+        <ion-input type="text" [formControl]="input3" formControlName="input3"></ion-input>
+      </ion-item>
+      <ion-button shape="round" type="submit" color="primary" expand="block" [disabled]="!form.valid">Save</ion-button>
+    </form>
+
+    <ion-button shape="round" expand="block" (click)="pickFile()" [disabled]="!form.valid">Pick File</ion-button>
+    <ion-button shape="round" expand="block" routerLink="/input-forms">List Forms</ion-button>
+
+</ion-content>

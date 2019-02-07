@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>List</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">
+        <ion-icon name="add-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card color="primary" *ngFor="let inputForm of inputForms | async" routerLink="/input-form-details/{{inputForm.id}}">
+      <ion-card-header>
+        {{ inputForm.timeCreated.toDate() | date: medium }}
+      </ion-card-header>
+    </ion-card>
+</ion-content>

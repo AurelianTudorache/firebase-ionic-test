@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "347421312817",
+    "firebase_url": "https://bs-six-screens.firebaseio.com",
+    "project_id": "bs-six-screens",
+    "storage_bucket": "bs-six-screens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347421312817:android:bbfbe5177a1c56e1",
+        "android_client_info": {
+          "package_name": "com.home.bs_six_screens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347421312817-t0bdau1d2khp94ce1rj03ldrmd7i0h7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnOMNER3ea50rmz7ruDBA_o7asxGhQshU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

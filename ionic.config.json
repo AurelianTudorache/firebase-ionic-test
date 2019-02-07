@@ -1,0 +1,7 @@
+{
+  "name": "bs-six-screens",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
